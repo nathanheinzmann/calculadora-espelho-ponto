@@ -30,7 +30,7 @@ const HomePage = () => {
     const ready = Object.values(time).filter((value) => value === '').length === 1;
     
     if (!ready) {
-      alert('Você deve deixar 1 campo em branco');
+      alert('Preencha 3 horários');
       return;
     }
 
