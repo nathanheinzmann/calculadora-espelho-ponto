@@ -3,6 +3,6 @@ const minutesToHours = (minutos: number) => {
   const minutesRemaining = minutos % 60;
 
   return `${hours}:${minutesRemaining.toString().padStart(2, "0")}`;
-}
+};
 
 export default minutesToHours;

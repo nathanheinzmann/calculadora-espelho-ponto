@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals"],
+  "rules": {
+    "no-console": "warn",
+    "@next/next/no-img-element": "off",
+    "indent": [
+      1,
+      2,
+      { "SwitchCase": 1, "ignoredNodes": ["ConditionalExpression"] }
+    ],
+    "semi": [1, "always"]
+  }
 }
