@@ -6,11 +6,16 @@ export const Main = styled.div`
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 `;
 
 export const Inputs = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 1rem;  
+  }
 `;
 
 export const InputTip = styled.p`

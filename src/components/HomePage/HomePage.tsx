@@ -84,7 +84,7 @@ const HomePage = () => {
         <Styles.Inputs>
           <Styles.InputTip>Entrada</Styles.InputTip>
           <Styles.Input
-            type="text"
+            type="number"
             value={time.first}
             onChange={(event) => setTime((prev) => ({ ...prev, first: event.target.value }))}
             onBlur={formatTime('first')}
@@ -93,7 +93,7 @@ const HomePage = () => {
           />
           <Styles.InputTip>Saída para almoço</Styles.InputTip>
           <Styles.Input
-            type="text"
+            type="number"
             value={time.second}
             onChange={(event) => setTime((prev) => ({ ...prev, second: event.target.value }))}
             onBlur={formatTime('second')}
@@ -101,7 +101,7 @@ const HomePage = () => {
           />
           <Styles.InputTip>Volta do almoço</Styles.InputTip>
           <Styles.Input
-            type="text"
+            type="number"
             value={time.third}
             onChange={(event) => setTime((prev) => ({ ...prev, third: event.target.value }))}
             onBlur={formatTime('third')}
@@ -109,7 +109,7 @@ const HomePage = () => {
           />
           <Styles.InputTip>Saída</Styles.InputTip>
           <Styles.Input
-            type="text"
+            type="number"
             value={time.fourth}
             onChange={(event) => setTime((prev) => ({ ...prev, fourth: event.target.value }))}
             onBlur={formatTime('fourth')}
@@ -117,7 +117,7 @@ const HomePage = () => {
           />
           <Styles.InputTip>Horas necessárias</Styles.InputTip>
           <Styles.Input
-            type="text"
+            type="number"
             value={time.needed}
             onChange={(event) => setTime((prev) => ({ ...prev, needed: event.target.value }))}
             onBlur={formatTime('needed')}
